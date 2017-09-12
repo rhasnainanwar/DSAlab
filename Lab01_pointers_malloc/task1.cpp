@@ -16,6 +16,6 @@ int main(void)
 		*(salary + i) = *(salary + i) + *(salary + i) / (i + 1);
 		cout << *(salary + i) << endl;
 	}
-	
+	delete [] salary;
 	return 0;
 }

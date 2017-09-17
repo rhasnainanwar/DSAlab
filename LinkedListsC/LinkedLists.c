@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 /*-----  GLOBAL  -----*/
 //Struct for containing a single node; i.e., the list will be chain of nodes connected through pointers
 /*

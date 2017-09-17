@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "Day_16_-_LinkedLists.c"
+#include <stdlib.h>
+#include "LinkedLists.c"
 
 int main(){
     //starting with an empty node

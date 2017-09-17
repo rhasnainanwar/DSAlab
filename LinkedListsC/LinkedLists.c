@@ -120,12 +120,10 @@ node* pop(node* head){
 //OUTPUT: NULL
 void destroy(node** head){
     node* current = *head;
-    node* next;
+    node* next = current->next;
 
-    while (current != NULL){
-       next = current->next;
-       free(current);
-       current = next;
+    while (next != NULL){
+        destroy(&next);
     }
 
     *head = NULL;

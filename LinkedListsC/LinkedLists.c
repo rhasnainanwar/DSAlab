@@ -5,7 +5,7 @@
 NOTE that the name list is typdef-ed to be self-referencing for the "next" pointer.
 This is because of the fact that the actual name of the struct "node" has not yet been declared; sequence.
 */
-typedef struct list {
+typedef struct  {
     int data; //value at in a node
     struct node* next; //pointer to next node
 } node;

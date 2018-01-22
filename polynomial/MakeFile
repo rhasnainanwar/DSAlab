@@ -1,0 +1,11 @@
+polycalc.o: polycalc.cpp polynomial.h
+    clang++ -std=c++11 -g -Wall -c polycalc.cpp
+
+polynomial.o: polynomial.cpp polynomial.h
+    clang++ -std=c++11 -g -Wall -c polynomial.cpp
+    
+polycalc: polycalc.o polynomial.o
+    clang++ -Wall -o polycalc polycalc.o polynomial.o
+    
+clean:
+    rm -f *.o polycalc *~
